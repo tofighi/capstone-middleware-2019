@@ -48,12 +48,12 @@ app.get('/', (req, res) => {
 		//console.log("Database Created");
 	//});
 	
-	connection.query("drop table history", function(err, result){
-		if (err){
-			throw err;
-		}
-		console.log("Table deleted");
-	});
+	//connection.query("drop table history", function(err, result){
+		//if (err){
+			//throw err;
+		//}
+		//console.log("Table deleted");
+	//});
 	
 	var createString = "create table history(id int primary key auto_increment, question varchar(255), answer text, reportname varchar(255), occurencetime datetime default current_timestamp on update current_timestamp)";
 	
