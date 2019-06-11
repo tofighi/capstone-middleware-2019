@@ -41,12 +41,12 @@ app.use(JSONParser.urlencoded({limit: '50mb', extended:true}));
 app.get('/', (req, res) => {
 	var connection = mysql.createConnection("mysql://qv6hlv3xrfkbop5c:hsanivpca7np1b4o@ctgplw90pifdso61.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/hy3ck4npzxefsxdy");
 	connection.connect();
-	connection.query("CREATE DATABASE questionhistory", function(err, result){
-		if (err){
-			throw err;
-		}
-		console.log("Database Created");
-	});
+	//connection.query("CREATE DATABASE questionhistory", function(err, result){
+		//if (err){
+			//throw err;
+		//}
+		//console.log("Database Created");
+	//});
 	
 	connection.query("drop table history", function(err, result){
 		if (err){
