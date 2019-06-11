@@ -39,7 +39,7 @@ var sessionId = "";
 app.use(JSONParser.urlencoded({limit: '50mb', extended:true}));
 
 app.get('/', (req, res) => {
-	var connection = mysql.createConnection("mysql://qv6hlv3xrfkbop5c:hsanivpca7np1b4o@ctgplw90pifdso61.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/hy3ck4npzxefsxdy");
+	/*var connection = mysql.createConnection("mysql://qv6hlv3xrfkbop5c:hsanivpca7np1b4o@ctgplw90pifdso61.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/hy3ck4npzxefsxdy");
 	connection.connect();
 	connection.query("CREATE DATABASE questionhistory", function(err, result){
 		if (err){
@@ -64,7 +64,7 @@ app.get('/', (req, res) => {
 		console.log("Table created");
 	});
 	
-	connection.end();
+	connection.end();*/
 	res.sendStatus(200);
 });
 
