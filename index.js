@@ -64,7 +64,7 @@ app.get('/', (req, res) => {
 		console.log("Table created");
 	});
 	
-	connection.end();*/
+	connection.end();
 	res.sendStatus(200);
 });
 
