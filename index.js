@@ -109,7 +109,7 @@ app.post('/continueConversation', (req, res1) => {
 	var chatObject = "";
 	assistant.message({
 		assistant_id: assistantID,
-		session_id: insertModuleJSON.message,
+		session_id: insertModuleJSON.sessionId,
 			input: {
 				'message_type': 'text',
 				'text': insertModuleJSON.message
